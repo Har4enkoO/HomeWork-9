@@ -15,9 +15,9 @@ function generateBlocks() {
 
 function removeBlocks() {
   let allBlocks = document.querySelectorAll('.blocks');
-  for (let i = 0; i < allBlocks.length; i++) {
-    allBlocks[i].remove();
-  }
+  allBlocks.forEach(block => {
+    block.remove();
+  });
 }
 function generateBlocksInterval() {
   generateBlocks();
